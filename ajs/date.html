@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/angular.min.js"></script>
+</head>
+<body>
+    <h2>Test date</h2>
+    <hr>
+    <div ng-app="myapp" ng-controller="myctr">
+        <p>Date = {{today|date : "dd.mm.y"}}</p>
+        <p>Date = {{today|date : "short"}}</p>
+        <p>Date = {{today|date : "medium"}}</p>
+        <p>Date = {{today|date : "shortDate"}}</p>
+        <p>Date = {{today|date : "fullDate"}}</p>
+        <p>Date = {{today|date : "mediumTime"}}</p>
+    </div>
+    <script>
+    angular.module("myapp",[]).controller("myctr",function($scope){
+        $scope.today= new Date();
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>J2</title>
+    <link rel="stylesheet" href="../css/bot.css">
+    <style>
+        .cool {
+            background-color: deeppink;
+            width: 300px;
+            height: 150px;
+        }
+    </style>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Jquery</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam dolorum, nobis odit aliquid autem consequuntur eius
+            mollitia laborum numquam ullam, ab quo harum nihil voluptatibus odio minima. Odit, rerum neque!</p>
+        <input type="button" value="Change" id="click" />
+        <script lang="javascript">
+            $("#click").click(function () {
+                $("p").addClass("cool");
+            });
+
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<?xml versioon="1.0" encoding="utf-8"?>
+<STLIST>
+<Student>
+<ID>S01</ID>
+<Name>Rooney</Name>
+<Age>17</Age>
+</Student>
+<Student>
+<ID>S02</ID>
+<Name>Harry</Name>
+<Age>17</Age>
+</Student>
+<Student>
+<ID>S03</ID>
+<Name>Rosa</Name>
+<Age>17</Age>
+</Student>
+<Student>
+<ID>S04</ID>
+<Name>Kiuu</Name>
+<Age>17</Age>
+</Student>
+</STLIST>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agular</title>
+    <script src="../js/angular.min.js"></script>
+</head>
+
+<body ng-app="">
+    <h2>Dome</h2>
+    <hr>
+    <div ng-app="">
+        <input type="text" placeholder="nhap vao ten cua ban" ng-model="yourname" id="txtName" /> <br><br>
+        <p>Hello, <span id="yourname">...</span></p>
+    </div>
+</body>
+<script>
+    //khai bao moduel angular js cho dong so 10
+
+    window.onload = function () {
+        var txtName = document.getElementById("txtName");
+        var yourname = document.getElementById("yourname");
+        txtName.oninput = function () {
+            yourname.innerHTML = txtName.Value;
+        }
+    }
+
+</script>
+
+</html>

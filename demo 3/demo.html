@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function (e) {
+            $("li").on("click", function (e) {
+                alert("Live avent trigger !!!");
+            });
+            $("#btAdd").on("click", function () {
+                $("ul").append("<li>New Item</li>");
+            });
+            $("btUndelegate").on("click", function () {
+                $("li").off("click");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h2>Live() function</h2>
+    <hr>
+    <input type="button" value="Add Item" id="btAdd" />
+    <input type="button" value="Undelegat" id="btUndelegate" />
+    <ul>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ul>
+</body>
+
+</html>

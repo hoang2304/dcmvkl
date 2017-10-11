@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/angular.min.js"></script>
+    <style>
+    
+    </style>
+</head>
+<body>
+    <h2>Test mode</h2>
+    <div ng-app>
+        <form action="#" name="frMail">
+            <input type="email" placeholder="enter your main" name="eMail" ng-model="eMail">
+        </form>
+        <h2>the input valid state is: </h2>
+        <h3>{{frMail.eMail.$valid}}</h3>
+    </div>
+</body>
+</html>

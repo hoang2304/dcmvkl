@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/angular.min.js"></script>
+</head>
+<body>
+    <h2>From validate demo</h2>
+    <div ng-app>
+        <form action="#" name="frLog">
+            <input type="text" name="txtName" ng-model="txtName" required placeholder="Your name">
+        </form>
+        <p>the input valid state is: </p>
+        <h3>{{frLog.txtName.$valid}}</h3>
+    </div>
+</body>
+</html>

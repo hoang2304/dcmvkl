@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp">
+    <h2>Angular Demo</h2>
+    <div ng-controller="myCtr">
+        <h3>Hello, {{student.name}}<br>
+        your final mark is {{student.mark}}</h3>
+    </div>
+
+</body>
+<script>
+    var app = angular.module("myApp", []);
+    app.controller("myCtr", function ($scope) {
+        $scope.student = {};
+        $scope.student.name = "Le Loc";
+        $scope.student.mark = 100;
+    });
+
+</script>
+
+</html>
